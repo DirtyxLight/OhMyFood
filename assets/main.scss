@@ -1,5 +1,5 @@
 // Base
-@import "./sass/base/base";
+@import "./sass/base/_base";
 @import "./sass/base/_typography";
 
 // layout
@@ -10,7 +10,7 @@
 
 // Abstracts
 @import "./sass/utils/_variables";
-@import "./sass/utils/colors";
+@import "./sass/utils/_colors";
 @import "./sass/utils/_mixins";
 
 // Components

@@ -1,1 +1,1 @@
-{"version":3,"sources":["sass/base/_base.scss","main.css","sass/utils/_colors.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,UAAA;ACCJ;;ACFK;EACD,YAAA;ADKJ","file":"main.css"}
+{"version":3,"sources":["sass/base/_base.scss","main.css","sass/base/_typography.scss"],"names":[],"mappings":"AAAA;EAEI,WAAA;ACAJ;;ACFA;EACI,wBAAA;EACA,kBAAA;ADKJ","file":"main.css"}

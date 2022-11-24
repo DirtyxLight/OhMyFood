@@ -1,8 +1,8 @@
 body {
-  text-align: center;
-  width: 50%;
+  width: auto;
 }
 
-body p {
-  color: green;
+h1 {
+  font-family: "Shrikhand";
+  font-style: italic;
 }/*# sourceMappingURL=main.css.map */
