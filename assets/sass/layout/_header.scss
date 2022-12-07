@@ -1,0 +1,31 @@
+.header-main{
+    width: 100%;
+    
+    & h1 {
+        text-align: center
+    }
+    & .location {
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #F6F6F6;
+    }
+    & .loc {
+
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        background-color: #EAEAEA;
+        
+    }
+    & h2{
+        padding-top: 2rem;
+    }
+    & .btn-main {
+        margin-bottom: 3rem;
+    }
+
+}
