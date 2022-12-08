@@ -1,8 +1,20 @@
 body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 h1 {
     font-family: 'Shrikhand',Arial, Helvetica, sans-serif;
     font-style: italic;
 }
+
+p{
+    font-weight: lighter;
+}
+
+.discover {
+    padding: 0rem 1rem;
+    font-weight: lighter;
+}
+
+

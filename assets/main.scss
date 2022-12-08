@@ -1,6 +1,16 @@
+// Abstracts
+@import "./sass/utils/_variables";
+@import "./sass/utils/_mixins";
+@import "./sass/utils/_colors";
+
 // Base
 @import "./sass/base/_base";
 @import "./sass/base/_typography";
+
+
+// Components
+@import "./sass/components/_button";
+@import "./sass/components/_cards";
 
 // layout
 @import "./sass/layout/_navbar";
@@ -8,15 +18,7 @@
 @import "./sass/layout/_sidebar";
 @import "./sass/layout/_header";
 
-// Abstracts
-@import "./sass/utils/_variables";
-@import "./sass/utils/_colors";
-@import "./sass/utils/_mixins";
-
-// Components
-@import "./sass/components/_button";
-@import "./sass/components/_cards";
-
+// Pages
 @import "./sass/pages/_homepage";
 @import "./sass/pages/_delice";
 @import "./sass/pages/_note";

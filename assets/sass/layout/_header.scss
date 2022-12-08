@@ -2,7 +2,8 @@
     width: 100%;
     
     & h1 {
-        text-align: center
+        height: 3rem;
+        text-align: center;
     }
     & .location {
 
@@ -12,7 +13,7 @@
         background-color: #F6F6F6;
     }
     & .loc {
-
+        box-shadow: 0px -3px 1px rgba(0, 0, 0, 0.15);
         display: flex;
         flex-direction: row;
         column-gap: 1rem;
@@ -25,7 +26,7 @@
         padding-top: 2rem;
     }
     & .btn-main {
-        margin-bottom: 3rem;
+        margin: 2rem auto 3rem auto;
     }
 
 }

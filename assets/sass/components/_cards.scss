@@ -1,0 +1,23 @@
+.prev-cards{
+    &__resto{
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+    }
+    &__container{
+        height: 7.5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 40%;
+    }
+    .fa-heart{
+        cursor: pointer;
+        font-size: 20px;
+        &:active{
+        background-color: $color-btn-main;
+        }
+    }
+    
+}

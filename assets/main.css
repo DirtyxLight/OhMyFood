@@ -10,12 +10,24 @@ body {
   align-items: center;
 }
 
-ol {
+ul {
+  width: 300px;
   list-style-type: none;
+  padding: 0;
+}
+
+img {
+  width: 335px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: black;
 }
 
 h1 {
@@ -23,10 +35,50 @@ h1 {
   font-style: italic;
 }
 
+p {
+  font-weight: lighter;
+}
+
+.discover {
+  padding: 0rem 1rem;
+  font-weight: lighter;
+}
+
+.btn-main {
+  padding: 0.8rem 1.1rem;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  font-weight: bold;
+  color: white;
+  border-radius: 25px;
+}
+
+.prev-cards__resto {
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.prev-cards__container {
+  height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 40%;
+       column-gap: 40%;
+}
+.prev-cards .fa-heart {
+  cursor: pointer;
+  font-size: 20px;
+}
+.prev-cards .fa-heart:active {
+  background-color: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
 .header-main {
   width: 100%;
 }
 .header-main h1 {
+  height: 3rem;
   text-align: center;
 }
 .header-main .location {
@@ -36,6 +88,7 @@ h1 {
   background-color: #F6F6F6;
 }
 .header-main .loc {
+  box-shadow: 0px -3px 1px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: row;
   -moz-column-gap: 1rem;
@@ -48,5 +101,51 @@ h1 {
   padding-top: 2rem;
 }
 .header-main .btn-main {
-  margin-bottom: 3rem;
+  margin: 2rem auto 3rem auto;
+}
+
+.homepage {
+  margin-top: 2rem;
+}
+.homepage-fonction__choice {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.homepage .grey {
+  color: #7E7E7E;
+}
+.homepage li {
+  margin-left: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: #F6F6F6;
+  padding: 1.5rem;
+}
+.homepage li:hover {
+  background-color: #F5EDFF;
+}
+.homepage li .nbs {
+  color: #fff;
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 5px 8px;
+  position: absolute;
+  right: 97%;
+}
+.homepage .prev-cards {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  width: 100%;
+  background-color: #F6F6F6;
+}
+.homepage .prev-cards__resto {
+  width: 335px;
 }/*# sourceMappingURL=main.css.map */
