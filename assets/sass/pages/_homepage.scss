@@ -39,14 +39,21 @@
         }
     }
 
+
+
+}
+
+.preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-back;
+    width: 100%;
     .prev-cards{
-        margin-top: 3rem;
+
         padding-top: 2.5rem;
-        width: 100%;
-        background-color: $color-back;
         &__resto{
             width: 335px;
         }
     }
-
 }

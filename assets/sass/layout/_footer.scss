@@ -1,0 +1,19 @@
+footer{
+    width: 100%;
+    background-color: $color-footer;
+    padding-left: 3rem;
+    color: #ffff;
+    h1{
+        font-size: 18px;
+    }
+    .footer{
+        &__list{
+            display: flex;
+            flex-direction: row;
+            column-gap: 1rem;
+            .i{
+                font-size: 15px;
+            }
+        }
+    }
+}

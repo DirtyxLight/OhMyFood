@@ -6,11 +6,12 @@
     }
     &__container{
         height: 7.5rem;
+        padding-left: 1em;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 40%;
+        column-gap: 30%;
     }
     .fa-heart{
         cursor: pointer;
