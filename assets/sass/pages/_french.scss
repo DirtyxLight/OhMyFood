@@ -1,0 +1,16 @@
+main{
+    width: 100%;
+    background-color: $color-back;
+    border-radius: 40px 40px 0px 0px;
+    padding-top: 3rem;
+    padding-left: 0.7rem;
+
+    .titleLike{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 40%;
+        padding-bottom: 2.5rem;
+    }
+}
+
