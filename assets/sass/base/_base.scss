@@ -3,9 +3,14 @@ html{
 }
 
 body{
-
+    box-sizing: border-box;
     height: auto;
     margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 h2{
@@ -15,6 +20,15 @@ h2{
 
 h3{
     margin: 0;
+}
+
+h4{
+    margin: 0;
+}
+
+.menu-name{
+    text-decoration:  underline solid $color-select-items 3px;
+    text-underline-offset: 8px;
 }
 
 ul{
@@ -36,17 +50,26 @@ ul{
     height: 50%;
     display: block;
     object-fit: cover;
-    position: relative;
+    position: absolute;
 
 }
+
+
 
 .fa-utensils{       
-&::before{
-  font-size: 15px;
-}
+    &::before{
+    font-size: 15px;
+    }
 }
 .fa-handshake-angle{
     &::before{
         font-size: 11px;
     }
+}
+
+.fa-circle-check{
+    color: $color-select-items;
+    padding: 25px 20px;
+    border-radius: 0px 15px 15px 0px;
+    
 }

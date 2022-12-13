@@ -3,12 +3,13 @@ footer {
     height: 150px;
     background-color: $color-footer;
     color: #ffff;
-
+    
     h1 {
         margin-top: 0;
         padding-top: 1.2rem;
         font-size: 18px;
     }
+
 
     .footer-main {
         &__contact {
@@ -23,6 +24,8 @@ footer {
                 height: 100%;
             }
         }
+
+        
 
         &__list {
             @media (min-width:$breakpoint-tablet) {
@@ -45,4 +48,8 @@ footer {
 
 
     }
+}
+.footer-menu{
+    position: relative;
+    bottom: -265px;
 }

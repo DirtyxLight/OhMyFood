@@ -1,0 +1,64 @@
+main{
+    @media (min-width:$breakpoint-pc) {
+        width: 1055px;
+        margin: auto;
+        top: 330px;
+    }
+    width: 100%;
+    background-color: $color-back;
+    border-radius: 40px 40px 0px 0px;
+    padding-top: 3rem;
+    position: relative;
+    top: 265px;
+   
+
+    .titleLike{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1rem;
+        column-gap: 40%;
+        padding-bottom: 2rem;
+        @media (min-width:$breakpoint-pc){
+            justify-content: center;
+            column-gap: 5%;
+        }
+
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 4rem;
+        &-prez{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+        }
+    }
+    .container-menu{
+        @media (min-width:$breakpoint-pc){
+            width: 39rem;
+        }
+        width: 85vw;
+        height: 3.5rem;
+        padding: 12px 5px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+
+        h4{
+            flex: 1 100%;
+        }
+        .description-menu{
+            flex: 2;
+        }
+    }
+}
+
