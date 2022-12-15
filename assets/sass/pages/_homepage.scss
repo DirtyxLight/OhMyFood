@@ -39,6 +39,10 @@
 
         &:hover{
             background-color: #F5EDFF;
+           
+        }
+        &:hover i {
+            color: $color-nbs;
         }
         .nbs{
             color: #fff;

@@ -36,8 +36,9 @@
     text-align: center;
     
     .fa-arrow-left{
-        float: left;
         padding-top: 15px;
+        position: absolute;
+        left: 10%;
         
     }
 }

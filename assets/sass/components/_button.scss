@@ -1,8 +1,17 @@
 .btn-main {
-    padding: 0.8rem 1.1rem;
+    padding: 0.8rem 1.2rem;
     background: $color-btn-main;
     font-weight: bold;
     color: #ffff;
     border-radius: 25px;
     margin-bottom: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    &:hover{
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+        opacity: 0.9;
+    }
+    &:active{
+        background: white;
+        color:$color-nbs;
+    }
 }
