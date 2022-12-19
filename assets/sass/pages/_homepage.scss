@@ -80,6 +80,8 @@
     }
     h2{
         width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
         @media (min-width:$breakpoint-tablet){
             padding-left: 1rem;
         }

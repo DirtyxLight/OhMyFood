@@ -2,14 +2,15 @@ main{
     @media (min-width:$breakpoint-pc) {
         width: 1055px;
         margin: auto;
-        
+
     }
     width: 100%;
     background-color: $color-back;
     border-radius: 40px 40px 0px 0px;
     padding-top: 3rem;
     position: relative;
-    top: 190px;
+    top: 46vh;
+    
    
 
     .titleLike{
@@ -18,6 +19,7 @@ main{
         align-items: center;
         padding-left: 1rem;
         padding-bottom: 2rem;
+        animation: slide 2s linear;
         @media (min-width:$breakpoint-pc){
             justify-content: center;
             column-gap: 5%;
@@ -26,16 +28,34 @@ main{
     }
 
     .menu{
+
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         row-gap: 4rem;
+
+
         &-prez{
             display: flex;
             flex-direction: column;
             row-gap: 1.5rem;
+            animation: pop 1.5s ease-in-out;
+            animation-fill-mode: forwards;
+  
+            @keyframes pop{
+                0%{
+                    opacity: 0;
+                    transform: translateX(-100px);
+                    visibility: visible;
+                }
+                100%{
+                    transform: translateX(0);
+                    visibility: visible;
+                }
+            }
         }
+        
         &-name{
             position:relative;
             padding-bottom: 10px;
@@ -56,7 +76,7 @@ main{
         }
         width: 85vw;
         height: 3.5rem;
-        padding: 12px 5px;
+        padding: 12px 0px 12px 5px;
         background-color: white;
         border-radius: 15px;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
@@ -64,6 +84,28 @@ main{
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+        
+        .anim-selct{
+            border-radius: 0px 15px 15px 0px;
+            background-color: black;
+            padding: 30px 19px;
+            position: relative;
+            top: -55%;
+            display: none;
+
+            &:active{
+            animation: slide .5s ease-in-out;
+            }
+
+            @keyframes slide{
+                0%{
+                    display: block;
+                    opacity: 10%;
+                }
+
+
+            }
+        }
 
         h4{
             flex: 1 100%;
@@ -71,6 +113,17 @@ main{
         .description-menu{
             flex: 2;
         }
+    }.entree{
+        animation-delay: 0s;
+        visibility: visible;
+    }
+    .plats{
+        animation-delay: 1s;
+        visibility: hidden;
+    }
+    .desserts{
+        animation-delay: 2s;
+        visibility: hidden;
     }
 }
 
