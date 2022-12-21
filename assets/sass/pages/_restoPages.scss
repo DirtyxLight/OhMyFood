@@ -1,66 +1,88 @@
-main{
+main {
     @media (min-width:$breakpoint-pc) {
         width: 1055px;
         margin: auto;
 
     }
+
     width: 100%;
     background-color: $color-back;
     border-radius: 40px 40px 0px 0px;
     padding-top: 3rem;
     position: relative;
     top: 46vh;
-    
-   
 
-    .titleLike{
+
+
+    .titleLike {
         display: flex;
-        justify-content:space-around;
+        justify-content: space-around;
         align-items: center;
         padding-left: 1rem;
         padding-bottom: 2rem;
-        animation: slide 2s linear;
-        @media (min-width:$breakpoint-pc){
+
+        @media (min-width:$breakpoint-pc) {
             justify-content: center;
             column-gap: 5%;
         }
 
+        animation: slideDown 1s ease-out;
+        animation-fill-mode: forwards;
+
+        @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+                visibility: visible;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
     }
 
-    .menu{
+    .menu {
 
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         row-gap: 4rem;
+        animation: pop .3s ease-out;
+        animation-fill-mode: forwards;
 
 
-        &-prez{
+        &-prez {
             display: flex;
             flex-direction: column;
             row-gap: 1.5rem;
-            animation: pop 1.5s ease-in-out;
+            animation: pop 1s ease-in;
             animation-fill-mode: forwards;
-  
-            @keyframes pop{
-                0%{
+
+            @keyframes pop {
+                0% {
                     opacity: 0;
                     transform: translateX(-100px);
                     visibility: visible;
                 }
-                100%{
+
+                100% {
                     transform: translateX(0);
+                    opacity: 1;
                     visibility: visible;
                 }
             }
         }
-        
-        &-name{
-            position:relative;
+
+        &-name {
+            position: relative;
             padding-bottom: 10px;
             width: fit-content;
-            &::before{
+
+            &::before {
                 content: "";
                 position: absolute;
                 width: 40px;
@@ -70,10 +92,12 @@ main{
             }
         }
     }
-    .container-menu{
-        @media (min-width:$breakpoint-pc){
+
+    .container-menu {
+        @media (min-width:$breakpoint-pc) {
             width: 39rem;
         }
+
         width: 85vw;
         height: 3.5rem;
         padding: 12px 0px 12px 5px;
@@ -84,46 +108,95 @@ main{
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        
-        .anim-selct{
-            border-radius: 0px 15px 15px 0px;
-            background-color: black;
-            padding: 30px 19px;
-            position: relative;
-            top: -55%;
-            display: none;
+        justify-content: space-between;
 
-            &:active{
-            animation: slide .5s ease-in-out;
-            }
+        &:hover .anim-selct {
+            animation: slide .3s ease-in;
+            animation-fill-mode: forwards;
+        }
 
-            @keyframes slide{
-                0%{
-                    display: block;
-                    opacity: 10%;
+        &:hover .price {
+            animation: move .3s ease-out;
+            animation-fill-mode: forwards;
+
+            @keyframes move {
+                0% {
+                    transform: translateX(0);
+
                 }
 
+                100% {
+                    transform: translateX(-50px);
+                }
+            }
+        }
+        &:hover .description-menu {
+            animation: cut .3s ease-out;
+            animation-fill-mode: forwards;
 
+            @keyframes cut {
+               0% {
+                width: 80%;
+             }
+
+                100% {
+                    width: 65%
+                }
             }
         }
 
-        h4{
+
+        .description-menu {
+            width: 80%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .anim-selct {
+            width: 0px;
+            border-radius: 0px 15px 15px 0px;
+            background-color: $color-select-items;
+            position: absolute;
+            right: 0;
+            overflow: hidden;
+
+            i {
+                font-weight: 900;
+            }
+
+            @keyframes slide {
+                0% {
+                    width: auto;
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    width: auto;
+                    padding: 30px 17px;
+                }
+            }
+        }
+
+        h4 {
             flex: 1 100%;
         }
-        .description-menu{
-            flex: 2;
-        }
-    }.entree{
+
+    }
+
+    .entree+.titleLike {
         animation-delay: 0s;
         visibility: visible;
     }
-    .plats{
+
+    .plats {
+        animation-delay: .5s;
+        visibility: hidden;
+    }
+
+    .desserts {
         animation-delay: 1s;
         visibility: hidden;
     }
-    .desserts{
-        animation-delay: 2s;
-        visibility: hidden;
-    }
 }
-

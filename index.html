@@ -18,6 +18,16 @@
 </head>
 
 <body>
+    <div id="load">
+        <div class="pan-loader">
+            <div class="loader"></div>
+            <div class="pan-container">
+            <div class="pan"></div>
+            <div class="handle"></div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </div>
 
     <header class="header-main">
         <h1>ohmyfood</h1>
@@ -27,7 +37,7 @@
                 <p>Paris, Belleville</p>
             </span>
 
-            <h2>Réservez le menu qui vous convient</h2>
+            <h2 class="titleHome">Réservez le menu qui vous convient</h2>
             <span class="discover">Découvrez des restaurants d’exception, sélectionnés par nos soins.</span>
             <div class="btn-main" href="">Explorer nos restaurants</div>
 
@@ -36,7 +46,7 @@
 
     <section class="homepage">
         <div class="homepage-fonction">
-            <h2>Fonctionnement</h2>
+            <h2 class="titleHome">Fonctionnement</h2>
             <ul class="homepage-fonction__choice">
                 <li><p class="nbs">1</p><i class="fa-solid fa-mobile-screen-button grey"></i>Choississez un restaurant</li>
                 <li><p class="nbs">2</p></2><i class="fa-solid fa-list grey"></i>Composez votre menu</li>
@@ -47,14 +57,16 @@
 
     <section class="preview">
         <div class="prev-cards">
-            <h2>Restaurants</h2>
+            <h2 class="titleHome">Restaurants</h2>
             <div class="prev-cards__resto">
                 <a href="./restaurants/laPalatteDuGout.html">
+                    <p class="new">Nouveau</p>
                     <div class="prev-cards__image">
                         <img class="img-main"src="./assets/img/PaletteGout.jpg" alt="La palette du goût">
+                        
                     </div>
                 </a>
-                    <div class="prev-cards__container">
+                    <div class="prev-cards__container"> 
                         <a class="img-prev" href="./restaurants/laPalatteDuGout.html">
                             <h3>La palette du goût</h3>
                         </a>
@@ -65,6 +77,7 @@
 
             <div class="prev-cards__resto">
                 <a href="./restaurants/LaNoteEchantee.html">
+                    <p class="new">Nouveau</p>
                     <div class="prev-resto__image">
                         <img class="img-main"src="./assets/img/NoteEchantee.jpg" alt="La note enchantée">
                     </div>
@@ -120,7 +133,7 @@
                 <li class="footer-main__lists"><i class="fa-solid fa-utensils "></i>Proposer un restaurant</li>
                 <li class="footer-main__lists"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
                 <li class="footer-main__lists">Mention légales</li>
-                <li class="footer-main__lists">Contact</li>
+                <li class="footer-main__lists"><a class="contact" href="adresse@mail.com">Contact</a></li>
             </ul>
         </div>
     </footer>
