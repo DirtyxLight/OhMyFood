@@ -65,25 +65,32 @@
   }
 
 #load{
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    //height: 100vh;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: load 5s ease-in forwards;
+    animation: load 2s ease-in forwards;
+    background-color: white;
+    z-index: 1000;
 
     @keyframes load {
         0%   {
-
             opacity: 1;
         }
-
+        80% {
+          opacity: 1;
+        }
         100% {
-            opacity: 0;
-            position: absolute;
-            z-index: -1000;
-            visibility: hidden;
+          opacity: 0;
+          display: none;
+          z-index: -1;
         }
     }  
 }
