@@ -664,10 +664,6 @@ main .menu {
   flex-wrap: wrap;
   align-items: center;
   row-gap: 4rem;
-  -webkit-animation: pop 0.3s ease-out;
-          animation: pop 0.3s ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 main .menu-prez {
   display: flex;
